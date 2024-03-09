@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 300;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-wallpaper {
+  /* min-height: 100vh; */
+  position: fixed;
+  z-index: -1;
+  background-color: #080c0f;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../../assets/bg/Hawaii.jpg),
+    url(../../assets/bg/caribbean.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 0, 50% 50%;
+  background-size: 250px 250px, cover;
+  color: #c6f8a9;
+}
+
+.container {
+  /* ограничение блока по ширине */
+  max-width: 1280px;
+  /* выравнивание блока по центру */
+  margin: 0 auto;
+  /* оторвать текст от края блока */
+  padding: 20px;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.4);
+  /* margin-bottom: 100px;
+  margin-top: 160px; */
+  color: rgb(50, 90, 201);
+  padding: 20px;
+}
+
+.content-g {
+  background-image: url(../../assets/bg/abstract-286.png);
+  /* background-repeat: no-repeat; */
+  background-position: 0 0;
+  background-size: 150px 150px;
+  color: rgb(50, 90, 201);
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header {
+  background-color: rgb(194, 194, 253);
+  padding: 20px;
+}
+
+/* меню навигации по центру */
+.navbar {
+  text-align: center;
+}
+
+/* убираем маркеры, внешние и внутр отступы */
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* меню в ряд */
+  display: flex;
+  /* меню по центу */
+  justify-content: center;
+  /* при увеличении меню - в несколько рядов */
+  flex-wrap: wrap;
+  /* интервал между элементами */
+  gap: 20px;
+}
+
+.navbar-link {
+  background-color: rgb(252, 188, 248);
+  padding: 0.5em 1em;
+  /* блоковый элемент > строчный */
+  display: block;
+  /* border-radius: 0.5em; */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.438);
+}
+
+.main {
+  background-color: rgb(252, 188, 248);
+  padding: 20px 0;
+}
+
+.footer {
+  background-color: rgb(194, 194, 253);
+  color: rgb(50, 90, 201);
+  text-align: center;
+  padding: 30px 0;
+}
+
+.new::after {
+  content: "new";
+  background: rgb(123, 255, 0);
+  color: rgb(28, 68, 15);
+  font-size: 70%;
+  padding: 2px 5px;
+  margin-left: 2px;
+}
+
+.p-letter::first-letter {
+  color: rgb(42, 81, 165);
+  font-size: 24px;
+  font-weight: 900;
+  float: left;
+  /* border: 2px solid beige; */
+  background-color: rgb(252, 188, 248);
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.sublist {
+  list-style: outside
+    url(https://images.freeimages.com/fic/images/icons/2625/google_plus_interface_icons/18/emoticon_smile.png?ref=findicons);
+  font-size: 18px;
+  background-color: rgb(252, 188, 248);
+  color: rgb(42, 81, 165);
+  font-weight: normal;
+  margin: 10px;
+  padding: 10px 10px 10px 30px;
+}
+
+.list-catalog {
+  list-style: outside
+    url(https://images.freeimages.com/fic/images/icons/731/green_and_blue/32/emoticons.png?ref=findicons);
+  font-size: 22px;
+  background-color: rgb(194, 194, 253);
+  color: rgb(42, 81, 165);
+  /* font-weight: 300; */
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 1em 2em;
+}
+
+.container--gallery {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.border-img {
+  border: 15px solid rgb(252, 188, 248);
+  margin: 10px;
+}
+
+.border-img:hover {
+  border: 15px solid transparent;
+  margin: 10px;
+}
+
+.form-style {
+  background-color: rgb(252, 188, 248);
+  color: rgb(42, 81, 165);
+}
+
+.form-group {
+  margin: 10px 10px 10px;
+}
+
+legend {
+  transform: translateY(-10px);
+  color: rgb(42, 81, 165);
+  text-transform: uppercase;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 10px 20px;
+  min-height: 75px;
+  max-height: 33vh;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: rgb(42, 81, 165);
+  background-color: white;
+  border: 1px solid;
+}
+
+.btn:hover {
+  color: rgb(17, 34, 71);
+  background-color: rgb(194, 194, 253);
+}
+
+.input-name {
+  text-transform: capitalize;
+}
+
+.heading-text-bckgr {
+  background-color: rgb(188, 218, 252);
+  padding: 5px;
+}
+
+.heading-articles-comment {
+  color: rgb(161, 161, 161);
+}
+
+.heading-articles-comment:hover {
+  color: rgb(0, 0, 0);
+}
+
+.heading-articles-read {
+  color: rgb(194, 67, 177);
+  font-weight: 600;
+}
+
+.heading-articles-read:hover {
+  color: rgb(87, 17, 77);
+}
+
+.heading-articles-link {
+  border-bottom: 2px solid rgb(97, 17, 100);
+  color: rgb(97, 17, 100);
+}
+
+.heading-articles {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+}
+
+.h1-articles {
+  text-align: center;
+}

@@ -1,47 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ГАЛЕРЕЯ</title>
-  <link rel="stylesheet" href="../pages/assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
-  <h1>ГАЛЕРЕЯ</h1>
+  <div class="bg-wallpaper"></div>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="../index.html">ГОЛОВНА</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="articles.html">СТАТТІ</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="catalog.html">КАТАЛОГ</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="contacts.html">КОНТАКТИ</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="gallery.html">ГАЛЕРЕЯ</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="page-nav.html">НАВІГАЦІЯ</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="registration.html">РЕЄСТРАЦІЯ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <ul>
-    <li><a href="../index.html">ГОЛОВНА</a></li>
-    <li><a href="articles.html">СТАТТІ</a></li>
-    <li><a href="catalog.html">КАТАЛОГ</a></li>
-    <li><a href="contacts.html">КОНТАКТИ</a></li>
-    <li><a href="gallery.html">ГАЛЕРЕЯ</a></li>
-    <li><a href="page-nav.html">НАВІГАЦІЯ</a></li>
-    <li><a href="registration.html">РЕЄСТРАЦІЯ</a></li>
-  </ul>
-  <div>
-    <a href="articles/img/krotovaya-nora.jpg" target="_blank">
-      <span>Кротова нора</span>
-      <img alt="Кротовая нора" src="articles/img/krotovaya-nora.jpg" width="300">
-    </a>
-  </div>
+  <main class="main">
+    <div class="container content-g">
+      <h1>ГАЛЕРЕЯ</h1>
 
-  <div>
-    <a href="articles/img/blackandwhitehole.jpg" target="_blank">
-      <span>Чорна та біла нори</span>
-      <img alt="Чорна та біла нори" src="articles/img/blackandwhitehole.jpg" width="300">
-    </a>
-  </div>
+      <div class="container--gallery">
+        <div>
+          <a href="../assets/img/krotovaya-nora.jpg" target="_blank">
+            <span>Кротова нора</span>
+            <img class="border-img" alt="Кротовая нора" src="../assets/img/krotovaya-nora.jpg" width="350"
+              title="открыть в новой вкладке">
+          </a>
+        </div>
 
-  <div>
-    <a href="articles/img/quasar.jpg" target="_blank">
-      <span>Квазар</span>
-      <img alt="Квазар" src="articles/img/quasar.jpg" width="300">
-    </a>
-  </div>
-  <footer>
-    <div>&copy; Buzhan Catherine</div>
+        <div>
+          <a href="../assets/img/blackandwhitehole.jpg" target="_blank">
+            <span>Чорна та біла нори</span>
+            <img class="border-img" alt="Чорна та біла нори" src="../assets/img/blackandwhitehole.jpg" width="350"
+              title="открыть в новой вкладке">
+          </a>
+        </div>
+
+        <div>
+          <a href="../assets/img/quasar.jpg" target="_blank">
+            <span>Квазар</span>
+            <img class="border-img" alt="Квазар" src="../assets/img/quasar.jpg" width="350"
+              title="открыть в новой вкладке">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>&copy; Buzhan Catherine</div>
+    </div>
   </footer>
 
 </body>
